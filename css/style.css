@@ -405,3 +405,10 @@ html.reg-closed .open-box{display:none}
 .open-box{border:2px solid var(--accent);border-style:solid;background:linear-gradient(145deg,#fffdf6,#fbf3dc);box-shadow:var(--shadow)}
 .open-box h3{color:var(--primary)}
 .open-box h3 svg{width:26px;height:26px;vertical-align:-6px;margin-inline-end:.4rem;stroke:var(--primary);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+/* QR card in the contact section */
+.qr-card{display:flex;align-items:center;gap:2rem;max-width:760px;margin:2.2rem auto 0;padding:1.6rem 1.8rem;border-radius:var(--radius);background:rgba(255,255,255,.88);border:1px solid rgba(197,155,77,.28);box-shadow:var(--shadow)}
+.qr-card img{flex:none;width:190px;height:190px;border-radius:16px;box-shadow:0 10px 30px rgba(42,74,52,.18);background:var(--bg)}
+.qr-card h3{color:var(--primary);font-size:1.4rem;margin-bottom:.3rem}
+.qr-card p{color:var(--muted);margin-bottom:1rem}
+@media(max-width:640px){.qr-card{flex-direction:column;text-align:center;padding:1.4rem 1.1rem}.qr-card img{width:min(240px,70vw);height:auto;aspect-ratio:1}}
